@@ -25,3 +25,5 @@ let json_1={
  
 }
 console.log(json_1.path);
+
+console.log(process.env.VUE_APP_SECRET);
