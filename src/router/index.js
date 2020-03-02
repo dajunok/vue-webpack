@@ -20,15 +20,15 @@ const routes = [
   },
   {
     path: '/asyncComA',
-    name: 'asyncComA',    
+    name: 'asyncComA',
     component: () => import(/* webpackChunk Name: "about" */ '../components/asyncComA.vue')
   },
   {
     path: '/asyncLoad',
     name: 'asyncLoad',
-    component: r => require.ensure([], () => r(require('../components/asyncComponent.vue')),'myChunk')
+    component: r => require.ensure([], () => r(require('../components/asyncComponent.vue')), 'myChunk')
   }
-  
+
 ]
 
 const router = new VueRouter({
