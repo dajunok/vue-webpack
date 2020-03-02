@@ -31,7 +31,6 @@ Date.prototype.Format = function(fmt) {
   return fmt
 };
 // const currentDate=Date;
-
 export default function () {
   return new Date().Format('yyyy-MM-dd HH:mm:ss');
 }

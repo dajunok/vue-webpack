@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -29,10 +29,10 @@ const routes = [
     component: r => require.ensure([], () => r(require('../components/asyncComponent.vue')), 'myChunk')
   }
 
-]
+];
 
 const router = new VueRouter({
   routes
-})
+});
 
-export default router
+export default router;
